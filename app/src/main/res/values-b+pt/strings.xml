@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SpeakOut</string>
+    
+    <!--  Login Activity  -->
+    <string name="login_success">Login realizado com sucesso.</string>
+</resources>
