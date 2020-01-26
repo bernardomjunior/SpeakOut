@@ -1,6 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/app_logo_activity_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_launcher_background"
+        android:contentDescription="@string/content_description_app_logo"
+        android:layout_marginTop="48dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edittext_email_activity_login"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_logo_activity_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edittext_email_activity_login"
+            android:inputType="textEmailAddress"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edittext_password_activity_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/edittext_email_activity_login"
+        app:layout_constraintStart_toStartOf="@+id/edittext_email_activity_login"
+        app:layout_constraintTop_toBottomOf="@id/edittext_email_activity_login">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/edittext_password_activity_login"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/button_login_activity_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/button_login_activity_login"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@id/edittext_password_activity_login"
+        app:layout_constraintStart_toStartOf="@id/edittext_password_activity_login"
+        app:layout_constraintTop_toBottomOf="@id/edittext_password_activity_login"
+        android:onClick="onClick"/>
+
+    <TextView
+        android:id="@+id/textview_signup_activity_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/textview_signup_activity_login"
+        android:textColor="@color/clickable_text_view"
+        app:layout_constraintEnd_toEndOf="@id/button_login_activity_login"
+        app:layout_constraintStart_toStartOf="@id/button_login_activity_login"
+        app:layout_constraintTop_toBottomOf="@id/button_login_activity_login" />
+
+    <TextView
+        android:id="@+id/textview_forgot_password_activity_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="@string/textview_forgot_password_activity_login"
+        android:textColor="@color/clickable_text_view"
+        app:layout_constraintEnd_toEndOf="@id/textview_signup_activity_login"
+        app:layout_constraintStart_toStartOf="@id/textview_signup_activity_login"
+        app:layout_constraintTop_toBottomOf="@id/textview_signup_activity_login" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

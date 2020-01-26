@@ -2,5 +2,12 @@
     <string name="app_name">SpeakOut</string>
 
     <!--  Login Activity  -->
-    <string name="login_success">Login Succeeded.</string>
+    <string name="login_success_activity_login">Login Succeeded.</string>
+    <string name="edittext_email_activity_login">Email address</string>
+    <string name="edittext_password_activity_login">Password</string>
+    <string name="textview_signup_activity_login">Not yet registered? Create an account.</string>
+    <string name="textview_forgot_password_activity_login">Forgot password? Recover it.</string>
+    <string name="button_login_activity_login">LOGIN</string>
+    <string name="content_description_app_logo">App logo.</string>
+    <string name="invalid_email_format">Email with invalid format.</string>
 </resources>
