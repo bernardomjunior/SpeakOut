@@ -1,10 +1,12 @@
 package com.example.speakout
 
+import android.view.View
+
 interface LoginContract {
 
     interface View{
         fun loginSucess()
-        fun notifyUser(resourceMessage: Int)
+        fun notifyUser(resourceMessage: Int, viewId: Int? = null)
     }
 
     interface Presenter{
