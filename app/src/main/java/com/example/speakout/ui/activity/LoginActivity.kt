@@ -30,12 +30,9 @@ class LoginActivity: AppCompatActivity(), LoginContract.View{
             val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
-        textview_forgot_password_activity_login.setOnClickListener {
-            TODO("not yet implemented")
-        }
     }
 
-    override fun loginSucess() {
+    override fun loginSuccess() {
         val intent = Intent(this, HomeActivity::class.java)
         startActivity(intent)
     }

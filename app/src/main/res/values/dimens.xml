@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_logo_margin">48dp</dimen>
+    <dimen name="login_form_items_margin_horizontal">32dp</dimen>
+    <dimen name="login_form_item_distance_close">8dp</dimen>
+    <dimen name="login_form_item_distance_medium">16dp</dimen>
+</resources>

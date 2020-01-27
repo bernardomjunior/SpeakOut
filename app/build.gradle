@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'com.google.gms.google-services'
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
@@ -32,6 +34,9 @@ dependencies {
     implementation "androidx.core:core-ktx:$android_ktx"
     implementation "androidx.constraintlayout:constraintlayout:$constraint_layout"
     implementation "com.google.android.material:material:$material"
+
+    //Firebase
+    implementation "com.google.firebase:firebase-auth:$firebase_auth"
 
     //Test
     testImplementation "junit:junit:$junit_jnuit"
