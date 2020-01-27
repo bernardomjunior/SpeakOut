@@ -16,15 +16,15 @@
         app:layout_constraintTop_toTopOf="parent"
         android:src="@drawable/ic_launcher_background"
         android:contentDescription="@string/content_description_app_logo"
-        android:layout_marginTop="48dp"/>
+        android:layout_marginTop="@dimen/login_logo_margin"/>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/edittext_email_activity_login"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="@dimen/login_form_items_margin_horizontal"
+        android:layout_marginEnd="@dimen/login_form_items_margin_horizontal"
+        android:layout_marginTop="@dimen/login_logo_margin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/app_logo_activity_login">
@@ -40,7 +40,7 @@
         android:id="@+id/edittext_password_activity_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/login_form_item_distance_close"
         app:layout_constraintEnd_toEndOf="@+id/edittext_email_activity_login"
         app:layout_constraintStart_toStartOf="@+id/edittext_email_activity_login"
         app:layout_constraintTop_toBottomOf="@id/edittext_email_activity_login">
@@ -56,20 +56,19 @@
         android:id="@+id/button_login_activity_login"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/login_form_item_distance_medium"
         android:text="@string/button_login_activity_login"
         android:backgroundTint="@color/colorPrimary"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="@id/edittext_password_activity_login"
         app:layout_constraintStart_toStartOf="@id/edittext_password_activity_login"
-        app:layout_constraintTop_toBottomOf="@id/edittext_password_activity_login"
-        android:onClick="onClick"/>
+        app:layout_constraintTop_toBottomOf="@id/edittext_password_activity_login"/>
 
     <TextView
         android:id="@+id/textview_signup_activity_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/login_form_item_distance_medium"
         android:clickable="true"
         android:focusable="true"
         android:text="@string/textview_signup_activity_login"
@@ -82,9 +81,10 @@
         android:id="@+id/textview_forgot_password_activity_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:clickable="true"
-        android:focusable="true"
+        android:layout_marginTop="@dimen/login_form_item_distance_close"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="invisible"
         android:text="@string/textview_forgot_password_activity_login"
         android:textColor="@color/clickable_text_view"
         app:layout_constraintEnd_toEndOf="@id/textview_signup_activity_login"

@@ -5,7 +5,7 @@ import android.view.View
 interface LoginContract {
 
     interface View{
-        fun loginSucess()
+        fun loginSuccess()
         fun notifyUser(resourceMessage: Int, viewId: Int? = null)
     }
 
@@ -19,7 +19,6 @@ interface LoginContract {
 
     interface Callback{
         fun onSucess()
-        fun onConnectionError()
         fun onInvalidCredentialsError()
     }
 
