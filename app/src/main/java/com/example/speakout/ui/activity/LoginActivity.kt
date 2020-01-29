@@ -8,9 +8,13 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.speakout.LoginContract
 import com.example.speakout.LoginPresenter
 import com.example.speakout.R
-import kotlinx.android.synthetic.main.activity_login.*
+import kotlinx.android.synthetic.main.activity_login.edittext_email_activity_login
+import kotlinx.android.synthetic.main.activity_login.button_login_activity_login
+import kotlinx.android.synthetic.main.activity_login.edittext_password_activity_login
+import kotlinx.android.synthetic.main.activity_login.textview_signup_activity_login
 
-class LoginActivity: AppCompatActivity(), LoginContract.View{
+
+class LoginActivity : AppCompatActivity(), LoginContract.View {
 
     private val presenter = LoginPresenter(this)
 
@@ -27,14 +31,12 @@ class LoginActivity: AppCompatActivity(), LoginContract.View{
             presenter.login(email, pwd)
         }
         textview_signup_activity_login.setOnClickListener {
-            val intent = Intent(this, SignupActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, SignupActivity::class.java))
         }
     }
 
     override fun loginSuccess() {
-        val intent = Intent(this, HomeActivity::class.java)
-        startActivity(intent)
+        startActivity(Intent(this, HomeActivity::class.java))
     }
 
     override fun notifyUser(resourceMessage: Int, viewId: Int?) {
