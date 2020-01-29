@@ -2,7 +2,7 @@
     <string name="app_name">SpeakOut</string>
     <string name="content_description_app_logo">App logo.</string>
 
-    <!--  Login Activity  -->
+    <!--  begin region activity login -->
     <string name="login_success_activity_login">Login Succeeded.</string>
     <string name="edittext_email_activity_login">Email address</string>
     <string name="edittext_password_activity_login">Password</string>
@@ -11,9 +11,11 @@
     <string name="button_login_activity_login">LOGIN</string>
     
     
-    <!-- Errors -->
+    <!-- login errors -->
     <string name="invalid_email_format">Email with invalid format.</string>
     <string name="empty_email">Email field can not be empty.</string>
     <string name="empty_password">A password have to be provided.</string>
     <string name="invalid_credentials">Invalid Credentials.</string>
+    <!--  end region activity login -->
+
 </resources>
