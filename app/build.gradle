@@ -27,12 +27,19 @@ dependencies {
 
     //Default
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$appcompat"
     implementation "androidx.core:core-ktx:$android_ktx"
+    implementation "androidx.constraintlayout:constraintlayout:$constraint_layout"
+    implementation "com.google.android.material:material:$material"
+
+    //Firebase
+    implementation "com.google.firebase:firebase-auth:$firebase_auth"
 
     //Test
     testImplementation "junit:junit:$junit_jnuit"
     androidTestImplementation "androidx.test.ext:junit:$androidx_junit"
     androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_core"
 }
+
+apply plugin: 'com.google.gms.google-services'
