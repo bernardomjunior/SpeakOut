@@ -1,4 +1,4 @@
-package com.example.speakout.domain
+package com.example.speakout.data.domain
 
 class User(val id: Int,
            var email: String,

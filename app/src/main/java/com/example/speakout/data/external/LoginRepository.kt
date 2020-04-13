@@ -1,9 +1,11 @@
-package com.example.speakout
+package com.example.speakout.data.external
 
+import com.example.speakout.LoginContract
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginRepository(
-    private val loginCallback: LoginContract.Callback): LoginContract.Repository {
+    private val loginCallback: LoginContract.Callback
+): LoginContract.Repository {
 
     private val auth = FirebaseAuth.getInstance()
 

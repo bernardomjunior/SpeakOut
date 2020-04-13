@@ -1,4 +1,4 @@
-package com.example.speakout.domain
+package com.example.speakout.data.domain
 
 import android.graphics.Bitmap
 import java.util.Date
