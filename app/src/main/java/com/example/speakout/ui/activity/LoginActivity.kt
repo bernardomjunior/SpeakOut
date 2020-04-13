@@ -31,12 +31,11 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
             presenter.login(email, pwd)
         }
         textview_signup_activity_login.setOnClickListener {
-//            startActivity(Intent(this, SignupActivity::class.java))
+            startActivity(Intent(this, SignupActivity::class.java))
         }
     }
 
     override fun loginSuccess() {
-//        startActivity(Intent(this, HomeActivity::class.java))
     }
 
     override fun notifyUser(resourceMessage: Int, viewId: Int?) {
