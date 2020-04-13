@@ -1,14 +1,15 @@
 package com.example.speakout
 
 import android.util.Patterns
-import com.example.speakout.data.external.LoginRepository
+import com.example.speakout.contract.LoginContract
+import com.example.speakout.data.external.FirebaseRepository
 
 class LoginPresenter(
     private val loginView: LoginContract.View
 ) : LoginContract.Presenter, LoginContract.Callback {
 
     private val repository =
-        LoginRepository(this)
+        FirebaseRepository(this)
 
     override fun login(email: String, password: String) {
         if (isEmpty(email)) return loginView.notifyUser(

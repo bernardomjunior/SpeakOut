@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.speakout.LoginContract
+import com.example.speakout.contract.LoginContract
 import com.example.speakout.LoginPresenter
 import com.example.speakout.R
 import kotlinx.android.synthetic.main.activity_login.edittext_email_activity_login

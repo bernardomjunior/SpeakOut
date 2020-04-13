@@ -1,20 +1,18 @@
-package com.example.speakout
+package com.example.speakout.contract
 
-import android.view.View
-
-interface LoginContract {
+interface SignupContract {
 
     interface View{
-        fun loginSuccess()
+        fun signupSuccess()
         fun notifyUser(resourceMessage: Int, viewId: Int? = null)
     }
 
     interface Presenter{
-        fun login(email: String, password: String)
+        fun signup()
     }
 
     interface Repository{
-        fun login(email: String, password: String)
+        fun signup()
     }
 
     interface Callback{
